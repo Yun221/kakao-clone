@@ -36,3 +36,18 @@
   align-items: center;
   border-radius: 9px; /*50%로 적어도 됨. 이렇게 적으면 width랑 height바꾼다고 얘도 바꾸는 일 안 생김*/
 }
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
